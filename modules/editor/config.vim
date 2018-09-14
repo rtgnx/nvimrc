@@ -59,9 +59,9 @@ vnoremap H ^
 vnoremap L $
 
 " Next buffer
-noremap mm :bn<cr>
+noremap . :bn<cr>
 " Previous buffer
-noremap nn :bp<cr>
+noremap , :bp<cr>
 
 
 " Indent step left
