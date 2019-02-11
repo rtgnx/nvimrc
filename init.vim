@@ -22,4 +22,6 @@ call g:Init()
 if !isdirectory(expand(g:root.'/plugins'))
   execute 'PlugInstall!'
 endif
-colorscheme gotham
+
+colorscheme wal
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
