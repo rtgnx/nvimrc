@@ -7,7 +7,10 @@ PL 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
       \ }
-PL 'roxma/nvim-completion-manager'
+PL 'ncm2/ncm2'
+PL 'ncm2/ncm2-bufword'
+PL 'ncm2/ncm2-path'
+PL 'roxma/nvim-yarp'
 
 PL 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 PL 'zchee/deoplete-go', { 'do': 'make'}
