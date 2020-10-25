@@ -26,4 +26,10 @@ if !isdirectory(expand(g:root.'/plugins'))
 endif
 
 colorscheme wal
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+"hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+set cursorline&
+
+
+if empty($SSH_TTY)
+  colorscheme $THEME
+endif
