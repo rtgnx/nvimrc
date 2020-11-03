@@ -18,4 +18,4 @@ let g:gitgutter_sign_modified_removed = 'ww'
 let g:gitgutter_override_sign_column_highlight = 0
 
 nnoremap <silent> <Leader>tg :GitGutterToggle<CR>
-call gitgutter#highlight#define_sign_column_highlight()
+"call gitgutter#highlight#define_sign_column_highlight()
