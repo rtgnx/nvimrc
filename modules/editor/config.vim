@@ -58,6 +58,10 @@ noremap L $
 vnoremap H ^
 vnoremap L $
 
+imap jj <Esc>
+noremap f /
+noremap s <C-p>
+
 " Next buffer
 noremap . :bn<cr>
 " Previous buffer
