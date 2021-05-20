@@ -64,10 +64,10 @@ function! s:post_init()
 endfunction
 
 function! g:Init()
-	let  l:plug_path = g:root.'/autoload/plug.vim'
-	if empty(glob(l:plug_path))
-		execute '!curl -fLo ' . l:plug_path . ' --create-dirs ' .
-      \ ' https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+	if empty(glob(data_dir . '/autoload/plug.vim'))
+	  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 	endif
 
 	call s:load_modules()
