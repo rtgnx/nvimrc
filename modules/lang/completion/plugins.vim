@@ -13,5 +13,5 @@ PL 'ncm2/ncm2-path'
 PL 'roxma/nvim-yarp'
 
 PL 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-PL 'zchee/deoplete-go', { 'do': 'make'}
+"PL 'zchee/deoplete-go', { 'do': 'make'}
 PL 'zchee/deoplete-jedi'

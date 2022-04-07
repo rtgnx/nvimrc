@@ -17,7 +17,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
+"let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
 
 let g:lsc_auto_map = v:true
 
@@ -57,6 +57,7 @@ nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
+call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
 " enable ncm2 for all buffers
 autocmd BufEnter * call ncm2#enable_for_buffer()

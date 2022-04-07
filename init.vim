@@ -25,11 +25,12 @@ if !isdirectory(expand(g:root.'/plugins'))
   execute 'PlugInstall!'
 endif
 
-colorscheme wal
 "hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 set cursorline&
 
 
-if empty($SSH_TTY)
-  colorscheme $THEME
-endif
+colorscheme $THEME
+
+"if empty($SSH_TTY)
+"  colorscheme $THEME
+"endif
